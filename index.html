@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Un año contigo ❤️</title>
+
+  <title>Feliz Aniversario ❤️</title>
 
   <style>
     * {
@@ -12,118 +13,103 @@
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #ff758c, #ff7eb3);
-      color: white;
-      text-align: center;
       min-height: 100vh;
-      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
     }
 
     .contenedor {
-      min-height: 100vh;
-      padding: 50px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 25px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 25px;
-      font-weight: normal;
-      margin-bottom: 35px;
+      color: #e75480;
+      font-size: 30px;
+      margin-bottom: 15px;
     }
 
     .corazon {
-      font-size: 75px;
-      animation: latido 1.2s infinite;
+      font-size: 45px;
+      animation: latido 1s infinite;
     }
 
     @keyframes latido {
-      0%, 100% {
+      0% {
         transform: scale(1);
       }
+
       50% {
         transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1);
       }
     }
 
     .mensaje {
-      max-width: 600px;
-      background: rgba(255,255,255,0.18);
-      padding: 25px;
-      border-radius: 20px;
-      line-height: 1.7;
-      font-size: 18px;
-      margin: 20px auto;
-      backdrop-filter: blur(5px);
-    }
-
-    .contador {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin: 25px 0;
-    }
-
-    .tiempo {
-      background: rgba(255,255,255,0.2);
-      padding: 15px;
-      border-radius: 15px;
-      min-width: 75px;
-    }
-
-    .numero {
-      display: block;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .texto {
-      font-size: 13px;
-    }
-
-    .boton {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 25px;
-      background: white;
-      color: #ff4f81;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
       font-size: 17px;
+      color: #555;
+      line-height: 1.6;
+      margin: 20px 0;
     }
 
-    .boton:hover {
+    .contador-titulo {
+      font-size: 18px;
+      color: #e75480;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    #contador {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+      margin: 15px 0 25px;
+      line-height: 1.5;
+    }
+
+    .foto {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 20px;
+      margin: 10px auto 20px;
+      display: block;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .spotify {
+      display: inline-block;
+      background: #1DB954;
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      border-radius: 30px;
+      font-size: 17px;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(29,185,84,0.4);
+      transition: 0.3s;
+    }
+
+    .spotify:hover {
       transform: scale(1.05);
     }
 
-    .firma {
-      margin-top: 35px;
-      font-size: 16px;
-    }
-
-    .flotante {
-      position: fixed;
-      top: -20px;
-      font-size: 25px;
-      animation: caer linear forwards;
-      pointer-events: none;
-    }
-
-    @keyframes caer {
-      to {
-        transform: translateY(110vh) rotate(360deg);
-        opacity: 0;
-      }
+    .final {
+      margin-top: 25px;
+      color: #e75480;
+      font-size: 18px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -134,125 +120,83 @@
 
     <div class="corazon">❤️</div>
 
-    <h1>Feliz primer aniversario</h1>
+    <h1>Feliz Aniversario Mi Amor ❤️</h1>
 
-    <h2>Un año contigo, mi amor ❤️</h2>
+    <p class="mensaje">
+      Cada momento contigo se ha convertido en uno de mis recuerdos favoritos.
+      Gracias por estar conmigo, por hacerme feliz y por compartir tu vida conmigo.
+      ❤️
+    </p>
 
-    <div class="mensaje">
-      <p>
-        Hoy cumplimos un año juntos y quiero que sepas lo
-        importante que eres para mí.
-      </p>
-
-      <p>
-        Gracias por cada momento, cada sonrisa, cada abrazo
-        y por todos los recuerdos que hemos creado juntos.
-      </p>
-
-      <p>
-        Espero que este sea solamente el primero de muchos
-        años a tu lado. Te quiero muchísimo. ❤️
-      </p>
+    <div class="contador-titulo">
+      Falta para nuestro aniversario ❤️
     </div>
 
-    <h2>🎉 Nuestro primer aniversario 🎉</h2>
+    <div id="contador"></div>
 
-    <div class="contador">
-      <div class="tiempo">
-        <span class="numero" id="dias">0</span>
-        <span class="texto">Días</span>
-      </div>
+    <!-- FOTO DE USTEDES -->
+    <img src="IMG_5538.jpeg" class="foto" alt="Nuestra foto ❤️">
 
-      <div class="tiempo">
-        <span class="numero" id="horas">0</span>
-        <span class="texto">Horas</span>
-      </div>
-
-      <div class="tiempo">
-        <span class="numero" id="minutos">0</span>
-        <span class="texto">Minutos</span>
-      </div>
-
-      <div class="tiempo">
-        <span class="numero" id="segundos">0</span>
-        <span class="texto">Segundos</span>
-      </div>
-    </div>
-
-    <a
-      class="boton"
-      href="https://open.spotify.com/track/3zpUX8DszxIFXsaqUx3dfp"
-      target="_blank">
-      🎵 Nuestra canción
+    <!-- BOTÓN DE SPOTIFY -->
+    <a 
+      class="spotify"
+      href="https://open.spotify.com/track/3zpUX8DszxIFXsaqUx3dfp?si=FaTmYDBIQr6p4_5dnGZg2g&utm_source=copy-link"
+      target="_blank"
+    >
+      🎵 Nuestra Canción
     </a>
 
-    <div class="firma">
-      Hecho con ❤️ especialmente para ti
-    </div>
+    <p class="final">
+      Te amo mucho ❤️
+    </p>
 
   </div>
 
+
   <script>
 
-    // Fecha del primer aniversario
-    const fechaObjetivo = new Date("September 6, 2026 00:00:00").getTime();
+    const fechaAniversario = new Date("September 6, 2026 00:00:00").getTime();
 
-    function actualizarContador() {
+    const contador = setInterval(function() {
 
       const ahora = new Date().getTime();
-      const diferencia = fechaObjetivo - ahora;
+
+      const diferencia = fechaAniversario - ahora;
 
       if (diferencia <= 0) {
 
-        document.getElementById("dias").innerText = "❤️";
-        document.getElementById("horas").innerText = "❤️";
-        document.getElementById("minutos").innerText = "❤️";
-        document.getElementById("segundos").innerText = "❤️";
+        document.getElementById("contador").innerHTML =
+          "❤️ ¡Hoy cumplimos nuestro aniversario! ❤️";
+
+        clearInterval(contador);
 
         return;
       }
 
       const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
       const horas = Math.floor(
-        (diferencia / (1000 * 60 * 60)) % 24
+        (diferencia % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
       );
+
       const minutos = Math.floor(
-        (diferencia / (1000 * 60)) % 60
+        (diferencia % (1000 * 60 * 60)) /
+        (1000 * 60)
       );
+
       const segundos = Math.floor(
-        (diferencia / 1000) % 60
+        (diferencia % (1000 * 60)) /
+        1000
       );
 
-      document.getElementById("dias").innerText = dias;
-      document.getElementById("horas").innerText = horas;
-      document.getElementById("minutos").innerText = minutos;
-      document.getElementById("segundos").innerText = segundos;
-    }
+      document.getElementById("contador").innerHTML =
+        dias + " días " +
+        horas + " horas " +
+        minutos + " minutos " +
+        segundos + " segundos ❤️";
 
-    actualizarContador();
-    setInterval(actualizarContador, 1000);
-
-
-    // Corazones que caen
-    function crearCorazon() {
-
-      const corazon = document.createElement("div");
-
-      corazon.classList.add("flotante");
-      corazon.innerHTML = "❤️";
-
-      corazon.style.left = Math.random() * 100 + "vw";
-      corazon.style.animationDuration =
-        (Math.random() * 3 + 3) + "s";
-
-      document.body.appendChild(corazon);
-
-      setTimeout(() => {
-        corazon.remove();
-      }, 6000);
-    }
-
-    setInterval(crearCorazon, 500);
+    }, 1000);
 
   </script>
 
